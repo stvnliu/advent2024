@@ -18,7 +18,8 @@ fn parse_input(input_string: &str, column1: &mut Vec<i32>, column2: &mut Vec<i32
 }
 pub fn part1(input_path: &str) {
     println!("Part 1, Day 1");
-    let input = fs::read_to_string(input_path).expect("Expected to read the file");
+    let input = fs::read_to_string(input_path)
+        .expect("Expected to read the file");
     let mut loc1: Vec<i32> = Vec::new();
     let mut loc2: Vec<i32> = Vec::new();
     parse_input(&input, &mut loc1, &mut loc2);
@@ -32,7 +33,8 @@ pub fn part1(input_path: &str) {
 }
 pub fn part2(input_path: &str) {
     println!("Part 2, Day 1");
-    let input = fs::read_to_string(input_path).expect("Expected to read file normally");
+    let input = fs::read_to_string(input_path)
+        .expect("Expected to read file normally");
     let mut list1: Vec<i32> = Vec::new();
     let mut list2: Vec<i32> = Vec::new();
     parse_input(&input, &mut list1, &mut list2);
